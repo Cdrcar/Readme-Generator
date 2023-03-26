@@ -23,7 +23,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'no license'){
     return `
-    ## [License](#Table-of-contents)
+    ## [License](#table-of-contents)
     Licenced under:
     ${renderLicenseLink (license)}
     `;
@@ -32,9 +32,28 @@ function renderLicenseSection(license) {
   }
 };
 
-// TODO: Create a function to generate markdown for README
+// Create function that returns a message if user does not accept contributions
+function renderContribution(acceptContributors, data) {
+  if (!acceptContributors){
+    `Third party contributions are not accepted at the moment.`;
+  } else {
+    return `${data}`;
+  }
+};
+
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
+
+  ## [Table of Contents](#table-of-contents)
+
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contibuting](#contributing)
+  - [Contact Me](#contact)
 
 `;
 }
