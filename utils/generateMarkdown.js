@@ -52,8 +52,34 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contibuting](#contributing)
+  - [Contributing](#contributing)
   - [Contact Me](#contact)
+
+  ## [Description](#table-of-contents)
+
+  ${data.description}
+
+  ## [Installation](#table-of-contents)
+
+  ${data.installation}
+
+  ## [Usage](#table-of-contents)
+
+  ${data.usage}
+
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseBadge(data.license)}
+
+  ## [Contributing](#table-of-contents)
+
+  ${renderContribution(data.acceptContributors, data.contribution)}
+
+  ## [Contact Me](#table-of-contents)
+
+  - [GitHub](https://github.com/${data.usernameGit})
+
+  - [Email: ${data.email}](mailto:${data.email})
+
 
 `;
 }
