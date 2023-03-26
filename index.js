@@ -105,6 +105,27 @@ const questions = [
         default: true
     },
 
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'What is the guidelines for contributing to your project?',
+        when: ({ acceptContributors}) => {
+            if (acceptContributors){
+                return true;
+            } else {
+                return false;
+            }
+        },
+        validate: contributionInput => {
+            if (contributionInput) {
+                return true;
+            } else {
+                console.log(' Please enter guidelines for contributing');
+                return false;
+            }
+        }
+    }
+
 ];
 
 // TODO: Create a function to write README file
