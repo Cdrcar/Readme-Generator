@@ -149,10 +149,28 @@ function writeToFile(data) {
 // Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
-    .then(readmeData=>{
-        return readmeData;
-    })
-}
+    .then(answers => {
+        console.log(answers);
+        return answers;      
+    });
+};
+
 
 // Function call to initialize app
-init();
+init()
+// Call generateMarkdown function to generate the readme file content
+.then(answers => {
+    return generateMarkdown(answers);
+})
+// Call writeToFile fucntion to create the file
+.then(answers => {
+    return writeToFile(answers);
+})
+// Invokes the message : Readme file has been generated
+.then (answers => {
+    console.log(answers.message)
+})
+// Errors that may occur during  execution are logged to the console
+.catch (err => {
+    console.log(err);
+});
