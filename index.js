@@ -86,7 +86,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What command should be run to run the tests',
+        message: 'What are the instructions for use?',
         validate: usageInput => {
             if (usageInput){
                 return true;
@@ -96,6 +96,13 @@ const questions = [
             }
         }
 
+    },
+
+    {
+        type: 'confirm',
+        name: 'acceptContributors',
+        message: 'Would you allow contributions to your open source?',
+        default: true
     },
 
 ];
