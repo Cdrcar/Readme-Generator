@@ -145,8 +145,14 @@ function writeToFile(data) {
     
 };
 
-// TODO: Create a function to initialize app
-function init() {}
+
+// Create a function to initialize app
+function init() {
+    return inquirer.prompt(questions)
+    .then(readmeData=>{
+        return readmeData;
+    })
+}
 
 // Function call to initialize app
 init();
