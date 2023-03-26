@@ -81,7 +81,22 @@ const questions = [
                 return false;
             }
         }
-    }
+    },
+
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What command should be run to run the tests',
+        validate: usageInput => {
+            if (usageInput){
+                return true;
+            } else {
+                console.log ('Please enter usage instructions');
+                return false;
+            }
+        }
+
+    },
 
 ];
 
