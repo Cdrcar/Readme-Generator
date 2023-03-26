@@ -23,7 +23,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'no license'){
     return `
-    ## [License](#table-of-contents)
+    ##[License](#table-of-contents)
     Licenced under:
     ${renderLicenseLink (license)}
     `;
