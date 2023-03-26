@@ -60,8 +60,15 @@ const questions = [
                 return false;
             }
         }
+    },
 
-    }
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license will you use for your project?',
+        choices: ['apache', 'MIT', 'agpl', 'no license']
+    },
+    
 
 ];
 
