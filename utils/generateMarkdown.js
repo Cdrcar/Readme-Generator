@@ -53,6 +53,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
+  - [Tests](#tests)
   - [Contact Me](#contact)
 
   ## [Description](#table-of-contents)
@@ -73,6 +74,10 @@ function generateMarkdown(data) {
   ## [Contributing](#table-of-contents)
 
   ${renderContribution(data.acceptContributors, data.contribution)}
+
+  ## [Tests](#table-of-contents)
+
+  ${data.test}
 
   ## [Contact Me](#table-of-contents)
 
