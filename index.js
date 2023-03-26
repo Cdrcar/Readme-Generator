@@ -68,7 +68,20 @@ const questions = [
         message: 'What license will you use for your project?',
         choices: ['apache', 'MIT', 'agpl', 'no license']
     },
-    
+
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What command should be run to install dependencies?',
+        validate: installInput => {
+            if(installInput){
+                return true;
+            } else {
+                console.log('Please enter installation instructions');
+                return false;
+            }
+        }
+    }
 
 ];
 
