@@ -19,6 +19,22 @@ const questions = [
             }
         }
     },
+
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your e-mail address?',
+        validate: emailInput => {
+            if (emailInput){
+                return true;
+            } else {
+                console.log ('Please enter your e-mail address');
+                return false;
+            }
+        }
+    },
+
+    
 ];
 
 // TODO: Create a function to write README file
