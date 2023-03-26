@@ -55,7 +55,7 @@ function generateMarkdown(data) {
   - [Contributing](#contributing)
   - [Contact Me](#contact)
 
-  ## [Description (#table-of-contents)]
+  ## [Description](#table-of-contents)
 
   ${data.description}
 
@@ -74,7 +74,7 @@ function generateMarkdown(data) {
 
   ${renderContribution(data.acceptContributors, data.contribution)}
 
-  ## [Contact Me] (#table-of-contents)
+  ## [Contact Me](#table-of-contents)
 
   - [GitHub](https://github.com/${data.usernameGit})
 

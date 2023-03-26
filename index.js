@@ -124,6 +124,20 @@ const questions = [
                 return false;
             }
         }
+    },
+
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Please provide instructions on how to test the app. (Required)',
+        validate: testInput => {
+            if (testInput) {
+                return true;
+            } else {
+                console.log('Please enter your use test instructions!');
+                return false;
+            }
+        }
     }
 
 ];
@@ -131,7 +145,7 @@ const questions = [
 // Create a function to write README file
 function writeToFile(data) {
     return new Promise((resolve, reject)=>{
-        fs.writeToFile('./read/README-2.md', data, err => {
+        fs.writeFile('generated/README-2.md', data, err=> {
             if (err) {
                 reject(err);
                 return;
