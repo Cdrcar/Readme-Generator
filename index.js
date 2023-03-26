@@ -46,6 +46,21 @@ const questions = [
                 return false;
             }
         }
+    },
+
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Please write a short description of your project',
+        validate: descriptionInput => {
+            if(descriptionInput){
+                return true;
+            } else {
+                console.log ('Please enter a description');
+                return false;
+            }
+        }
+
     }
 
 ];
