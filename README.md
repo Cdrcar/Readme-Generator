@@ -6,6 +6,7 @@ README file generator using a command-line application and Node.js
 
   - [Description](#description)
   - [Final Result](#final-result)
+  - [Link to walkthrough video](#link-to-walkthrough-video)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -23,13 +24,17 @@ README file generator using a command-line application and Node.js
 
   ![Readme2](assets/Readme2.png)
 
+  ## [Link to walkthrough video](#table-of-contents)
+
+  [Readme Generator Walkthrough](https://drive.google.com/file/d/1Ol4OTRF5iJjtxzy_CWOaoolMxrS5kXtS/view)
+
   ## [Installation](#table-of-contents)
 
   npm init and npm i
 
   ## [Usage](#table-of-contents)
 
-  Once the installation is completed, run in the command line the code ‘node index.js’, answer the prompt questions and when you finalise, a file named ‘README-2.md’ in the ‘generated’ folder.
+  Once the installation is completed, run in the command line the code ' npm install' and ‘node index.js’, answer the prompt questions and when you finalise, a file named ‘README-2.md’ in the ‘generated’ folder.
 
   ## [License](#table-of-contents)
   Licenced under:
