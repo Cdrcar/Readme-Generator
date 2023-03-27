@@ -23,13 +23,16 @@
 
   Once the installation is completed, run in the command line the code ‘node index.js’, answer the prompt questions and when you finalise, a file named ‘README-2.md’ in the ‘generated’ folder.
 
-  
-    ## [License](#table-of-contents)
-    Licenced under:
-    [MIT](https://choosealicense.com/licenses/MIT)
+  ## [License](#table-of-contents)
+  Licenced under:
     
-  ![badge](https://img.shields.io/badge/license-MIT-green>)
+    
+  [MIT](https://choosealicense.com/licenses/MIT)
+    
+    
 
+  ![badge](https://img.shields.io/badge/license-MIT-green>)
+  
   ## [Contributing](#table-of-contents)
 
   undefined
